@@ -442,6 +442,7 @@ box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.5);
 .header-image{
     position: relative;
     padding-top: 80px;
+    width: 350px;
     /* animation: bounceTop-1 3s ease infinite; */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px),(max-width: 767px){
@@ -451,6 +452,9 @@ box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.5);
         
     }
 
+.header-hero-content h1 {
+    margin-top: 30px;
+}
 
 .header-shape-1{
     position: absolute;
@@ -897,7 +901,7 @@ box-shadow: -15px 10px 30px 0 rgb(0 0 0 / 30%);
 }
 
 .footer-area .logo{
-    max-width: 200px;
+    max-width: 50px;
 }
 .footer-about{
     max-width: 320px;
