@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inial-scale">
+    <title>LUNA</title>
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Header start-->
+    <header class="header-area">
+        <div class="nav-area">  <!-- navbar start-->
+<div class="container">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LUNA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testiamonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Download</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+</div>   <!-- navbar end-->
+
+ <!-- home start-->
+<div class="header-hero">
+    <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-between">
+            <div class="col-lg-6 col-md-10">
+                <div class="header-hero-content">
+                    <div class="h1 header-title"><span>Transform Your Health with LUNA:<br></span>Your Personal Fasting Companion</div> 
+                    <p class="text">Achieve your wellness goals through effective fasting techniques</p>
+                    <ul>
+                        <li><a href="" class="main-btn">Download Now</a></li>
+                        <li><a href="" class="header-video">Download Now</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="header-image">
+                    <img src="image/photo_2023-06-22 14.36.01.jpeg" alt="" class="image-1">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+<!-- home end-->
+
+</header>
+    
+ <!-- Header end-->
+
+
+
+    <!-- jquery JS-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+     <!-- Bootstrap JS-->
+     <script src="js/bootstrap.min.js"></script>
+      <!-- main js-->
+      <script src="js/main.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
